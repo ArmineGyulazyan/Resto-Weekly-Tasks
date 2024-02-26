@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Document</title>
+
+
+</head>
+<body>
+    <form action="">
+        <label for="email">Enter Email</label>
+        <input type="email" id="email">
+        <button id="btn" onclick="valid_email()">Submit</button>
+    </form>
+
+    <script>
+        function valid_email(){
+
+            if (document.getElementById("email").value == ""){
+                alert("Please enter an email address")
+            }
+        }
+    </script>
+</body>
+</html>

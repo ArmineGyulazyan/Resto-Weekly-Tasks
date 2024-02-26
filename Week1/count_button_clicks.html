@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <style>
+
+        #btn {
+
+            background-color: #fff7f7;
+            padding: 10px 20px;
+            font-size: 20px;
+            display: block;
+            margin: 0 auto
+        }
+
+        #text {
+            text-align: center;
+            color: black;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="count_clicks()">Click me</button>
+        <p id="text"> </p>
+
+    <script>
+        
+        let count = 0
+
+        function count_clicks(){
+            count += 1
+            document.getElementById("text").innerHTML = count
+           
+        }
+    </script>
+
+</body>
+</html>

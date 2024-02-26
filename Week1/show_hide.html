@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <style>
+
+        button {
+
+            background-color: #fff7f7;
+            padding: 10px 20px;
+            font-size: 20px;
+            display: block;
+            margin: 0 auto
+        }
+
+        .container {
+
+            background-color: #c40202; 
+            padding: 20px;   
+            margin: 0 auto;  
+            margin-top: 30px;
+        }
+
+        .container p {
+            text-align: center;
+            color: #fffefe;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="show_hide_func()">Show/Hide</button>
+    <div id="handle_div" class="container" >
+        <p>Surpriiise!!!
+            Click again!
+        </p>
+    </div>
+
+    <script>
+        let my_div = document.getElementById("handle_div")
+        my_div.style.visibility = "hidden"
+
+        function show_hide_func(){
+
+           my_div.style.visibility != "visible" ? my_div.style.visibility = "visible" : my_div.style.visibility = "visible" 
+           
+        }
+    </script>
+
+</body>
+</html>

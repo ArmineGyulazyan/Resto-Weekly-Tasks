@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Document</title>
+
+    <style>
+
+        button {
+
+            background-color: #004306;
+            padding: 20px 60px;
+            font-size: 20px;
+            display: block;
+            margin: 0 auto;
+            color: rgb(244, 249, 254);
+        }
+
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="change_btn_text()">Hello</button>
+
+    <script>
+
+        function change_btn_text(){
+
+            let btn_text = document.getElementById("btn").innerHTML
+            if (btn_text == "Hello"){
+                document.getElementById("btn").innerHTML = "Goodbye"
+            }
+            else{
+                document.getElementById("btn").innerHTML = "Hello"
+            }
+        }
+    </script>
+</body>
+</html>

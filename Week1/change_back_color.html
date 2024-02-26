@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex; 
+        }
+
+        #btn1 {
+
+            background-color: darkred;
+            padding: 10px 20px;
+            font-size: 20px;
+            display: block;
+            margin: 0 auto
+        }
+
+        #btn2 {
+
+            background-color: lightblue;
+            padding: 10px 20px;
+            font-size: 20px;
+            display: block;
+            margin: 0 auto
+        }
+
+        #btn3 {
+
+            background-color: pink;
+            padding: 10px 20px;
+            font-size: 20px;
+            display: block;
+            margin: 0 auto
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <button id="btn1" onclick="change_col('btn1')">DARK RED</button>
+        <button id="btn2" onclick="change_col('btn2')">LIGHT BLUE</button>
+        <button id="btn3" onclick="change_col('btn3')">PINK</button>
+    
+    </div>
+
+    <script>
+
+        function change_col(btn_id) {
+            
+            let col = document.getElementById(btn_id).innerHTML.toLowerCase().replace(" ","")
+            document.body.style.backgroundColor = col
+            
+        }
+    </script>
+</body>
+</html>

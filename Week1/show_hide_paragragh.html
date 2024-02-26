@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <style>
+
+        #btn {
+
+            background-color: #fff7f7;
+            padding: 10px 20px;
+            font-size: 20px;
+            display: block;
+            margin: 0 auto
+        }
+
+        #text {
+            color: black;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="show_hide_func()">Hide</button>
+        <p id="text">Artificial Intelligence is the intelligence possessed by the machines under which they can perform various functions with human help.
+            With the help of A.I, machines will be able to learn, solve problems, plan things, think, etc. 
+            Artificial Intelligence, for example, is the simulation of human intelligence by machines. 
+            In the field of technology, Artificial Intelligence is evolving rapidly day by day and it is believed that in the near future, artificial intelligence is going to change human life very drastically and will most probably end all the crises of the world by sorting out the major problems. 
+        </p>
+
+    <script>
+        let my_text = document.getElementById("text")
+        let btn_txt = document.getElementById("btn")
+
+        function show_hide_func(){
+
+           if(btn_txt.innerHTML == "Hide"){
+                my_text.style.visibility = "hidden"
+                btn_txt.innerHTML = "Show"
+           }
+           else{
+                my_text.style.visibility = "visible"
+                btn_txt.innerHTML = "Hide"
+           }
+
+           
+        }
+    </script>
+
+</body>
+</html>

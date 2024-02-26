@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>OnClick Change</title>
+
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+
+            background-color: #f4d8d8; 
+            padding: 20px;  
+            margin: auto; 
+        }
+
+        .container button {
+
+            background-color: #ece3e3;
+            padding: 10px 20px;
+            font-size: 20px;
+            display: block;
+            margin: 0 auto
+        }
+        
+        .container p {
+           
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Paragraph Change</h1>
+    <div class="container">
+        <button onclick="update_paragraph()">Magic change</button>
+        <p id="text">
+            <strong>Technology</strong> is a necessity of the modern lifestyle. 
+             Every day there are new ideas and advancements in the technology as the world becomes more involved in discovering and utilizing the potential of natural resources.
+             Technology has improved human lives significantly by providing convenience and efficiency.
+             It has made easily possible for us to access education, communication, medicine, transportation, sports, etc.
+             In this fast pace and ever-changing world, technological innovations take no time in becoming obsolete.
+             However, today for any nation’s development technology plays a vital role in improving its economy and the lives of the people. 
+             Technology is the present and future of this era.
+            </p>
+    </div>
+
+    <script>
+
+        let new_str = "<strong>Psychology</strong> is the study of mind and behavior. It encompasses the biological influences, social pressures, and environmental factors that affect how people think, act, and feel. Psychology is a broad and diverse field that encompasses the study of human thought, behavior, development, personality, emotion, motivation, and more. By studying or knowing some aspects of psychology benefits an individual hugely as it helps them learn not only about how a brain generally works but also how to use critical thinking in particular situations."
+        let prev = document.getElementById("text").innerHTML
+        
+
+        function update_paragraph(){
+            let current = document.getElementById("text").innerHTML
+
+            if(current == prev){
+
+                document.getElementById("text").innerHTML = new_str
+            } else {
+                document.getElementById("text").innerHTML = prev
+            }
+        }     
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Horizontal_Navigation_Bar</title>
+    <style>
+
+        .navbar {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 23px;
+            background-color:rgb(207, 223, 250);
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            padding: 30px;
+            font-size: 23px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+
+        <ul>
+            <li id="l1" onmouseover="mouse_over('l1')" onmouseout="mouse_out('l1')">Home</li>
+            <li id="l2" onmouseover="mouse_over('l2')" onmouseout="mouse_out('l2')">Productss</li>
+            <li id="l3" onmouseover="mouse_over('l3')" onmouseout="mouse_out('l3')">News</li>
+            <li id="l4" onmouseover="mouse_over('l4')" onmouseout="mouse_out('l4')" >Contact</li>
+            <li id="l5" onmouseover="mouse_over('l5')" onmouseout="mouse_out('l5')">About</li>
+        </ul>
+
+    </nav>
+    
+    <script>
+        function mouse_over(l){
+            document.getElementById(l).style.color = "red"
+        }
+
+        function mouse_out(l){
+            document.getElementById(l).style.color = "black"
+        }
+    </script>
+</body>
+</html>
